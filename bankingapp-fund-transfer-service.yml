@@ -15,7 +15,7 @@ spring:
       enabled: true
 
   kafka:
-    bootstrap-servers: localhost:9092
+    bootstrap-servers: http://${KAFKA_SERVICE:localhost}:9092
 
 server:
   port: 8093
